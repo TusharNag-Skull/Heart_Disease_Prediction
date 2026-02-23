@@ -3,7 +3,7 @@ import pandas as pd
 import mlflow
 import os
 import mlflow.sklearn
-
+from dotenv import load_dotenv
 load_dotenv()
 
 os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")

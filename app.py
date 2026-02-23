@@ -11,7 +11,7 @@ os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
 
 
 mlflow.set_tracking_uri(
-    "https://dagshub.com/TusharNag-Skul/Heart_Disease_Prediction.mlflow"
+    "https://dagshub.com/TusharNag-Skull/Heart_Disease_Prediction.mlflow"
 )
 
 

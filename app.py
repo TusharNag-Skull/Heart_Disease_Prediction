@@ -1,11 +1,18 @@
 import streamlit as st
 import pandas as pd
 import mlflow
+import os
 import mlflow.sklearn
 
+load_dotenv()
 
-# MLflow configuration (REQUIRED)
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
+os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+
+
+mlflow.set_tracking_uri(
+    "https://dagshub.com/TusharNag-Skul/Heart_Disease_Prediction.mlflow"
+)
 
 
 # Load model from MLflow Registry (Production)
